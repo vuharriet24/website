@@ -1,0 +1,116 @@
+/*Harriet Vumiliya*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4b76e;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: left; /* Aligns the header text to the left */
+    margin: 20px 0; /* Adds top and bottom margin for spacing */
+}
+
+.profile-section {
+    /* Clears the floats */
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    float: left; /* Floats the image to the left */
+    width: 150px;
+    height: auto;
+    margin-right: 20px; /* Adds margin to the right of the image */
+}
+
+.about-me-text {
+    float: right; /* Floats the about me text to the right */
+    width: calc(100% - 170px); /* Adjusts the width accounting for the image and its margin */
+}
+
+/* Container for navigation links */
+.tab-container {
+    clear: both; /* Clears the float */
+    text-align: left; /* Aligns the navigation links to the left */
+    padding: 20px 0; /* Padding above and below the navigation links */
+}
+
+.btn {
+    display: inline-block; /* Aligns buttons horizontally */
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid black;
+    color: red;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Rest of the styles can remain the same */
+
+/* ... (Rest of your CSS) ... */
+
+
+/* Styles for work experience and job listings */
+.work-experience h2, .job h3 {
+    font-weight: bold;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: none; /* Removes the default list bullet */
+    padding-left: 0; /* Removes padding to the left of ul elements */
+}
+
+/* List item styling */
+li {
+    position: relative; /* Allows absolute positioning relative to li */
+    padding-left: 20px; /* Adds space for custom bullet */
+}
+
+/* Custom bullet styling */
+li:before {
+    content: "•"; /* Adds a bullet before each list item */
+    position: absolute; /* Absolute position the custom bullet */
+    left: 0; /* Position at the very left of the li */
+    top: 0; /* Align with the top of the li */
+}
+
+/* Remove custom bullets for nested list items */
+ul > li > ul, ul > li > ul > li {
+    list-style-type: none; /* No bullets for nested lists */
+}
+
+ul > li > ul > li:before {
+    content: none; /* No custom bullets for nested list items */
+}
+/* Add these styles to your existing CSS */
+
+footer {
+    padding: 20px;
+    background-color: #685114; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+.personal-info h2 {
+    margin-top: 0;
+}
+
+.personal-info p {
+    font-size: 0.9em; /* Smaller font size for the footer content */
+}
+
+.personal-info a {
+    color: #59a6ff; /* Optional: color for links */
+}
+
+
+

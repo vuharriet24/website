@@ -1,0 +1,83 @@
+<!--
+    Harriet Vumiliya
+-->
+<!--
+    Todo
+    -what you like to do in your free time
+    -include picture on each hobby and decription of the picture
+    -make sure the the page has the button that will take you back to the home page
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4b76e;/* Or any other preferred background color */
+        }
+        .hobby-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hobby-description {
+            flex: 2; /* Give more space to the description */
+            padding-right: 20px; /* Adjust the spacing as necessary */
+        }
+        .hobby-image {
+            flex: 1; /* Give less space to the image */
+        }
+        .hobby-image img {
+            width: 50%; /* Make the image take up only 50% of its container's width */
+            max-width: 300px; /* Additionally, you can set a max-width to prevent it from being too large on bigger screens */
+            height: auto;
+            border-radius: 10px; /* Optional: for rounded corners */
+        }
+        @media (max-width: 600px) {
+            .hobby-container {
+                flex-direction: column; /* Stack the description and image on small screens */
+            }
+            .hobby-description, .hobby-image {
+                flex-basis: 100%;
+                text-align: center; /* Center-align the content for a better look on small screens */
+            }
+            .hobby-image img {
+                width: 80%; /* You can adjust this percentage to make the image larger or smaller on small screens */
+                max-width: none; /* Resets max-width property */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Hobbies</h1>
+
+    <div class="hobby-container">
+        <div class="hobby-description">
+            <h2>Kayaking</h2>
+            <p>Exploring the waters in a kayak is one of my favorite ways to connect with nature and get some exercise.</p>
+        </div>
+        <div class="hobby-image">
+            <img src="kayaking.png" alt="Harriet kayaking">
+        </div>
+    </div>
+
+    <div class="hobby-container">
+        <div class="hobby-description">
+            <h2>Hiking</h2>
+            <p>Hiking through trails and mountains gives me a sense of adventure and provides a great escape from the busy city life.</p>
+        </div>
+        <div class="hobby-image">
+            <img src="hikingWinter.png" alt="Harriet hiking">
+        </div>
+    </div>
+
+</body>
+</html>
